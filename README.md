@@ -29,14 +29,51 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+ A stateful component is always a class component. It is created by extending the React Component class.
+ A stateful component is dependent on its state object and can change its own state.
+ 
+ class APP extends React.Component {
+   constructor(){
+     super()
+   render(){
+
+   }
+
+   }
+ }
 
 2. Describe the different phases of the component lifecycle.
 
+Mounting = putting elements into the DOM
+Updating = updated whenever there is a change to the components state or props
+UnMounting = compoent is removed from the DOM
+
+
 3. Demonstrate an understanding of class component lifecycle methods.
+You must define React.Component all others are optional
+a series of events that happen form the birth of a react component to its death
+they go through the cycle of birth growth and death
+
+such as componentDidMount() or componentDidUpdate
+
+
 
 4. Define stateful logic.
 
+any code that uses state, but in the case of hooks , behavior created with the use of one or more hooks. 
+
+
 5. Describe how to test a React component with React Testing Library.
+You will test out what you expect the app to do, inorder to find unexpected behavior that may lead to fixing bugs.
+Triple A method applies here ....
+Arrange - we set up our component to be tested - and initialize getByText that we will run later
+const { getByText } = render(<APP />)
+
+Act - we will use what the getByText to pull the element we want to text and store it into a variable for use later
+const something = getByText(/hello/i)
+Assert - Now we will assert that the element is being rendered properly 
+expext(something0.toBeInTheDocument()
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
