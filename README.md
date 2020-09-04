@@ -60,7 +60,7 @@ such as componentDidMount() or componentDidUpdate
 
 4. Define stateful logic.
 
-any code that uses state, but in the case of hooks , behavior created with the use of one or more hooks. 
+any code that uses state, but in the case of hooks , non-visual behavior created with the use of one or more hooks. 
 
 
 5. Describe how to test a React component with React Testing Library.
